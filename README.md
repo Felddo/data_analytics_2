@@ -1,25 +1,20 @@
 # Описание
 Скрипт извлекает характеристики товаров (цена, бренд, категория) из текстовых описаний с помощью LLM (Groq API, модель llama-3.3-70b-versatile).
 
-#Установка
+# Установка
 pip install openai python-dotenv
 Создать файл .env:
 GROQ_API_KEY=your_api_key
-#Запуск
+# Запуск
 python script.py
 
-Входные данные
+# Входные данные
 Файл input.csv с колонкой description:
-
-csv
-
 description
 "Смартфон Samsung Galaxy S23 с экраном 6.1 дюйма, память 128 ГБ, стоимость 79999 рублей."
-Выходные данные
+
+# Выходные данные
 Файл output.json:
-
-JSON
-
 [
     {
         "description": "Смартфон Samsung Galaxy S23...",
