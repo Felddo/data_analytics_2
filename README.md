@@ -2,11 +2,12 @@
 Скрипт извлекает характеристики товаров (цена, бренд, категория) из текстовых описаний с помощью LLM (Groq API, модель llama-3.3-70b-versatile).
 
 ### Установка
-pip install openai python-dotenv
-#### Создать файл .env:
-GROQ_API_KEY=your_api_key
-#### Запуск
-python script.py
+1. git clone https://github.com/Felddo/data_analytics_2
+2. cd data_analytics_2
+3. pip install -r requirements.txt
+4. Делаем ключ на сайте https://console.groq.com/keys
+5. Вставляем в файл .env свой ключ "GROQ_API_KEY==ключ"
+6. python main.py
 
 ### Входные данные
 Первые 2 строчки файла input.csv с колонкой description:
